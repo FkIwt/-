@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <title>放物型偏微分方程式シミュレータ</title>
+        <link rel="stylesheet" href="simurater.css">
+        <script src="nylon.js"></script>
+        <script src="vcanvas.js"></script>
+        <script src="vbtimer.js"></script>
+        <script src="simurater.js"></script>
+    </head>
+    <body>
+        <div id="contents">
+            <div id="panel">
+                放物型偏微分方程式
+                <p>
+                <div>初期温度T(℃):<input type="number" value="100" id="T" name="temperature"></div>
+                <div>金属棒の長さ:<input type="number" value="10" id="X" name="nagasa" min="0"></div>
+                <div>倍速設定:<input type="range" id="baisoku" name="baisoku" min="-10" max="10"></div>
+                <div>
+                    <button type="button" id="start">start</button>
+                    <button type="button" id="stop">stop</button>
+                    <button type="button" id="reset">reset</button>
+                </div>
+            </p>
+            </div>
+    
+            <div id="main">
+                <div id="area1" class="area">
+                    <p>温度変化の様子</p>
+                    <canvas class="myCanvas" id="graph1" width="460" height="340"></canvas>
+                
+                </div>
+    
+                <div id="area2" class="area">
+                    <p>温度のグラフ</p>
+                    <canvas class="myCanvas" id="graph2" width="460" height="340"></canvas>
+                </div>
+            </div>     
+        </div>
+           
+    </body>
+</html>

@@ -1,0 +1,35 @@
+body{
+    background-color: rgb(255, 255, 255);
+}
+#panel{
+    float: left;
+    margin-right: auto;
+    width: 180px;
+}
+#main{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.myCanvas{
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+}
+.area{
+    margin-top: 10px;
+    position: relative;
+    display: flex;
+}
+#area1{
+    background-color: ivory;
+    width: 460px;
+    height: 360px;
+}
+#area2{
+    background-color: cornsilk;
+    width: 460px;
+    height: 360px;
+}
